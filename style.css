@@ -284,6 +284,7 @@ select {
     top: 8%;
     right: 8%;
     transform: rotate(-45deg);
+    cursor: pointer;
 }
 #modal_close::after {
     content: '';
@@ -406,10 +407,12 @@ select {
 
 
     .burger_open {
-        display: none;
+        transform: translateY(-50%) scale(0);
+        transition: .4s ease-in-out;
     }
 
     .burger_open.active {
+        transform: translateY(0) scale(1);
         min-width: 100vw;
         min-height: 100vh;
         position: absolute;
