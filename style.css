@@ -295,6 +295,7 @@ select {
     top: 0%;
     right: 2%;
     transform: rotate(270deg);
+    cursor: pointer;
 }
 
 .pop_up_body h2 {
